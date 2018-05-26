@@ -3,7 +3,9 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
-browser = webdriver.Firefox(executable_path='geckodriver')
+#browser = webdriver.Firefox(executable_path='geckodriver')
+
+browser = webdriver.Firefox(executable_path='C:\\Users\\ujjwal\\AppData\\Local\\Programs\\Python\\Python36\\selenium\\browserdrivers\\geckodriver.exe')
 
 browser.get('http://www.yahoo.com')
 assert 'Yahoo' in browser.title
