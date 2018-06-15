@@ -1,6 +1,10 @@
+import os
 import openpyxl
 
-wb = openpyxl.load_workbook('example.xlsx')
+cwd = os.getcwd()
+print("Current Working Directory is" + cwd)
+
+wb = openpyxl.load_workbook('excel/example.xlsx')
 print(type(wb))
 print(wb.get_sheet_names())
 sheet = wb.get_sheet_by_name('Fruits')
