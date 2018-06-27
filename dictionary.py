@@ -23,4 +23,7 @@ print('name' in apple) # same as 'name' in apple.keys()
 
 print('I am eating '+str(apple.get('name','Red apple')) + '.') # If 'name' doesn't exist default value will be displayed
 
-
+# Dictionary of list
+dictionary = {'names':['Ram','Shyam','Hari'], 'age':[2]}
+dictionary['age'].append(3)
+print(dictionary)

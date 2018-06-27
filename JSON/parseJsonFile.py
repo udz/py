@@ -10,7 +10,7 @@ file1 = open('JSON/data.json', "r")
 #wb = openpyxl.load_workbook('JSON/DomesticFlight.xlsx')
 #sheet = wb.get_sheet_by_name('Sheet2')
 
-file = open('JSON/output1.csv','w')
+file = open('JSON/output_UAT.csv','w')
 header = ('Line#,Adult,Airline,Arrival,Departure,FlightClassCode,AdultFare,ChildFare,AgencyCommission,ChildCommission,GrandTotal')
 pprint.pprint(header,file)
 
